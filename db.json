@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "nombre": "victreebel",
+      "precio": "$500",
+      "imagem": "https://i.ibb.co/W5TNFJX/victreebel.png"
+    },
+    {
+      "id": 2,
+      "nombre": "Togetic",
+      "precio": "$600",
+      "imagem": "https://i.ibb.co/9ckwtGB/togetic.png"
+    },
+    {
+      "id": 3,
+      "nombre": "Tangela",
+      "precio": "$800",
+      "imagem": "https://i.ibb.co/vHjgnJW/tangela2.png"
+    },
+    {
+      "id": "95e4",
+      "nombre": {},
+      "precio": "$200",
+      "imagem": "https://i.ibb.co/9ckwtGB/togetic.png"
+    },
+    {
+      "id": "9dad",
+      "nombre": "prueba",
+      "precio": "$200",
+      "imagem": "https://i.ibb.co/9ckwtGB/togetic.png"
+    },
+    {
+      "id": "a5ce",
+      "nombre": "prueba2",
+      "precio": "$200",
+      "imagem": "https://pngfre.com/wp-content/uploads/Pokemon-111-300x268.png"
+    }
+  ]
+}

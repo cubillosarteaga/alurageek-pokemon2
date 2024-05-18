@@ -2,12 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="estilos.css">
+    
+    <title>AluraGeek-Pokémon</title>
+    <link rel="shortcut icon" href="pokeball.png" type="image/x-icon">
 </head>
 <body>
-    <p>
-        hola
-    </p>
+    <header>
+        <nav>
+            <img src="hearts.png" alt=""> <h1>Alura-Geek</h1>
+        </nav>
+    </header>
+    <section class="contenedor">
+        
+        <section class="contenido">
+            <div class="contenedor-poke">
+                <div class="text-poke">
+                    <h2>MIS PRODUCTOS:</h2>
+                </div>
+                <ul class="productos-img" data-lista>
+                
+            </ul>
+            </div>
+            <div class="cajita-form">
+                <h2>AGREGAR PRODUCTO:</h2>
+                <form action="#" method="post" id="miFormulario" data-formulario>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required data-titulo>
+                    <label for="nombre">Precio:</label>
+                    <input type="text" id="nombre" name="nombre" required data-precio>
+                
+                    <label for="text">Imagen:</label>
+                    <input type="text" id="image" name="image" required data-imagen>
+                    <div class="botones-form">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpiar">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        
+    </section>
+    <section class="footer">
+        <div class="footer-img">
+            <img src="hearts.png" alt=""> <h1>Alura-Geek</h1>
+            
+        </div>
+        <div class="footer-text">
+            <small>Desarollado por Lía | Alura Latam- 2024</small>
+           
+        </div>
+    </section>
+    <script src="./js/mostrarProducts.js" type="module"></script>
+    <script src="./js/crearProducto.js" type="module"></script>
 </body>
 </html>

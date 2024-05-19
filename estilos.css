@@ -1,6 +1,6 @@
 body{
     font-family: "Press Start 2P", system-ui;
-    background-color: #fcd0b9;
+    background-color: #fffef1;
     margin: 0;
     background-image: url('toguepi1.png');
     background-repeat: no-repeat;
@@ -14,31 +14,40 @@ header{
 nav{
     display: flex;
     justify-content: center;
-    background-color: #f77655;
-    color: #f9f5e7;
+    background-color: #c5c6ff;
+    color: #000;
     align-items: center;
     padding: 13px;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
 }
 
 nav img{
-    width: 89px;
+    width: 79px;
 }
 
-h1{
-    font-size: 16px;
+nav h1{
+    font-size: 11px;
 }
+
+
+
 
 .contenido{
     display: flex;
     margin-top: 66px;
     justify-content: space-around;
     padding: 20px;
+    flex-direction: row;
 }
 
 .cajita{
     padding: 20px 20px 0px 20px;
-    background-color: #8daeba;
-    border-radius: 30px;
+    background-color: #fffef1;
+    border-radius: 16px;
+    -webkit-box-shadow: 3px 3px 0px 7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 0px 7px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 0px 7px rgb(0, 0, 0);
 }
 
 .cajita img{
@@ -49,12 +58,14 @@ h1{
     text-align: center;
     font-family: "Titillium Web", sans-serif;
     font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
    
 }
 
 .cajita h2::after{
     content: "";
-    background-color: #f9f5e8;
+    background-color: #ff91e8;
     display: block;
     height: 3px;
 }
@@ -83,14 +94,14 @@ h1{
     font-size: 17px;
     text-align: center;
     margin-bottom: 32px;
-    color: #f77655;
+    color: #000000;
 }
 
 .cajita-form h2{
     font-size: 17px;
     text-align: center;
     margin-bottom: 32px;
-    color: #f77655;
+    color: #000000;
 }
 
 .productos-img{
@@ -117,7 +128,7 @@ form {
 label {
     display: block;
     margin-bottom: 8px;
-    color: #003dff;
+    color: #000000;
     font-size: 16px;
     font-family: "Titillium Web", sans-serif;
     font-weight: 600;
@@ -130,45 +141,49 @@ input{
     margin-bottom: 16px;
     box-sizing: border-box;
     resize: none;
-    border: 1px solid #ee4d3c;
+    border: 2px solid #000000;
     border-radius: 20px;
     background-color: transparent;
 }
 
-input[type="submit"] {
-    background-color: #f77655;
-    color: #fff;
+button[type="submit"] {
+    background-color: #f7cb46;
+    color: #040404;
     cursor: pointer;
-    border: none;
     width: 131px;
-    border: 1px solid transparent;
+    border: 2px solid black;
     font-family: "Titillium Web", sans-serif;
     font-weight: 600;
+    border-radius: 8px;
+    padding: 5px 0px;
 }
 
-input[type="submit"]:hover {
-    border: 1px solid #f77655;
+button[type="submit"]:hover {
+    border: 2px solid #000000;
     background-color: transparent;
-    color: #f77655;
+    color: #000000;
+    border-radius: 8px;
 
 }
 
-input[type="reset"] {
-    border: 1px solid #f77655;
-    background-color: #fcd0b9;
-    color: #f77655;
+button[type="reset"] {
+    border: 2px solid #000000;
+    background-color: #fffef1;
+    color: #000000;
     font-family: "Titillium Web", sans-serif;
     font-weight: 600;
     cursor: pointer;
-    
+    border-radius: 8px;
     width: 131px;
+    padding: 5px 0px;
     
 }
 
-input[type="reset"]:hover {
-    background-color: #f77655;
-    border: 1px solid #f77655;
-    color: #fff;
+button[type="reset"]:hover {
+    background-color: #f7cb46;
+    border: 2px solid #000000;
+    color: #000000;
+    border-radius: 8px;
     
 
 }
@@ -179,10 +194,12 @@ input[type="reset"]:hover {
 }
 
 .footer{
-    background-color: #5189a7;
-    margin-top: 152px;
-    padding: 30px;
-    color: #f9f5e7;
+    background-color: #ff91e8;
+    margin-top: 388px;
+    padding: 18px;
+    color: #000;
+    border-top: 3px solid;
+    
 }
 
 .footer-img{
@@ -192,8 +209,12 @@ input[type="reset"]:hover {
     
 }
 
+.footer h1{
+    font-size: 11px;
+}
+
 .footer-img img{
-    width: 93px;
+    width: 77px;
 }
 
 .footer-text{
@@ -203,4 +224,57 @@ input[type="reset"]:hover {
     font-family: "Titillium Web", sans-serif;
     font-weight: 300;
     font-style: normal;
+}
+
+
+
+@media (max-width: 840px){
+   
+    .contenido{
+        flex-direction: column-reverse;
+        margin-top: 29px;
+    }
+
+    .contenedor-poke {
+        width: 100%;
+    }
+      
+    .text-poke {
+        margin-top: 65px;
+    }
+
+    .cajita-form {
+        width: 100%;
+    }
+
+    .productos-img{
+        justify-content: center;
+    }
+    form{
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 320px){
+   
+    .contenido{
+        flex-direction: column-reverse;
+        margin-top: 29px;
+    }
+
+    .contenedor-poke {
+        width: 100%;
+    }
+      
+    .text-poke {
+        margin-top: 65px;
+    }
+
+    .cajita-form {
+        width: 100%;
+    }
+
+    .productos-img{
+        justify-content: center;
+    }
 }

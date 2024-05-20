@@ -11,16 +11,24 @@ function crearCard(nombre,precio,imagem){
     <h2>${nombre}</h2>
     <div class="info-precio">
         <p>${precio}</p>
-        <img src="trash1.png" alt="">
+        <button id="eliminar"><i class="uil uil-trash-alt"></i></button>
     </div>`;
 
     return producto;
 }
 
+
+
 async function listarProductos(){
+    try{
     const listaAPI = await conexionAPI.listarProductos();
 
     listaAPI.forEach(producto=>lista.appendChild(crearCard(producto.nombre,producto.precio,producto.imagem)))
+}catch{
+    lista.innerHTML=`<h3 class="mensaje__titulo">Ha ocurrido un problema con la conexión :(</h3>`;
 }
+}
+
+
 
 listarProductos()

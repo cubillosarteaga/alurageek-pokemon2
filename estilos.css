@@ -195,7 +195,7 @@ button[type="reset"]:hover {
 
 .footer{
     background-color: #ff91e8;
-    margin-top: 388px;
+    margin-top: 161px;
     padding: 18px;
     color: #000;
     border-top: 3px solid;
@@ -224,6 +224,13 @@ button[type="reset"]:hover {
     font-family: "Titillium Web", sans-serif;
     font-weight: 300;
     font-style: normal;
+}
+
+#eliminar {
+    background-color: #f7cb46;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 

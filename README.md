@@ -52,7 +52,8 @@ Página desplegada: https://cubillosarteaga.github.io/alurageek-pokemon2/
 
 <p>Abre tu terminal y digitas los siguientes comandos para inicar el proyecto</p>
 
-<p>`npm init -y`
+<p>
+`npm init`
 
 `npm install json-server`
 
